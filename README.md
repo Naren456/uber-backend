@@ -45,6 +45,31 @@ A backend built with Spring Boot and MongoDB.
 |--------|----------|-------------|
 | POST | `/api/v1/rides/{id}/complete` | Mark a ride as completed |
 
+## Postman Screenshots
+
+### User Workflow
+**Register User**
+![Register User](postman_screenshots/user/user_register.png)
+
+**Create Ride**
+![Create Ride](postman_screenshots/user/user_create_ride.png)
+
+**View User Rides**
+![View User Rides](postman_screenshots/user/user_view_all.png)
+
+### Driver Workflow
+**Register Driver**
+![Register Driver](postman_screenshots/driver/driver_register.png)
+
+**View Pending Requests**
+![View Requests](postman_screenshots/driver/driver_ride_request.png)
+
+**Accept Ride**
+![Accept Ride](postman_screenshots/driver/driver_accept_ride.png)
+
+**Complete Ride**
+![Complete Ride](postman_screenshots/driver/driver_complete_ride.png)
+
 ## Example CURL Commands
 
 ### 1. Register User (Passenger)
@@ -103,27 +128,4 @@ curl -X POST http://localhost:8089/api/v1/rides/{RIDE_ID}/complete \
 -H "Authorization: Bearer <TOKEN>"
 ```
 
-## Postman Screenshots
 
-### User Workflow
-**Register User**
-![Register User](postman_screenshots/user/user_register.png)
-
-**Create Ride**
-![Create Ride](postman_screenshots/user/user_create_ride.png)
-
-**View User Rides**
-![View User Rides](postman_screenshots/user/user_view_all.png)
-
-### Driver Workflow
-**Register Driver**
-![Register Driver](postman_screenshots/driver/driver_register.png)
-
-**View Pending Requests**
-![View Requests](postman_screenshots/driver/driver_ride_request.png)
-
-**Accept Ride**
-![Accept Ride](postman_screenshots/driver/driver_accept_ride.png)
-
-**Complete Ride**
-![Complete Ride](postman_screenshots/driver/driver_complete_ride.png)
